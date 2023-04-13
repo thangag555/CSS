@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child selector</title>
+    <style>
+        ul > li{
+            list-style: square;
+        }
+        ul > ol li{
+            list-style: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>name</li>
+        <li>age</li>
+        <li>address</li>
+        <ol>
+            <li>temporary address</li>
+            <li>permanent address</li>
+        </ol>
+    </ul>
+</body>
+</html>
