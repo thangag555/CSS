@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media types at symbol rule</title>
+    <style>
+        @media screen{
+            body{
+                color: #32cd32;
+                font-family: arial,sans-serif;
+                font-size: 34px;
+                background-color: aqua;
+            }
+        }
+        @media print{
+            body{
+                color: #ff6347;
+                font-family: times,serif;
+                font-size: 12pt;
+            }
+        }
+        @media screen,print{
+            body{
+                line-height: 1.2;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    this is a body tag.<br>
+    it is the visible part of the web page.
+</body>
+</html>

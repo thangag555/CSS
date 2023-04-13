@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries-changing column width based on screen size</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            background: #f2f2f2;
+            box-sizing: border-box;
+        }
+
+        /*mobile phones(portrait & landscape)*/
+        @media screen and (max-width:767px){
+            .container{
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+
+        /*tablets and ipads(portrait & landscape)*/
+        @media screen and (min-width:767px) and (max-width:1023px){
+            .container{
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+
+        /*low resolution desktop and laptops*/
+        @media screen and (min-width:1024px){
+            .container{
+                width: 980px;
+                padding: 0 15px;
+            }
+        }
+
+        /*high resolution desktop and laptops*/
+        @media screen and (min-width:1280px){
+            .container{
+                width: 1200px;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">this is a division.</div>
+</body>
+</html>

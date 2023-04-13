@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear gardient left to right</title>
+    <style>
+        div.gradient{
+            width: 300px;
+            height: 300px;
+            /*fallback for browser that don't support gradient*/
+            background: red;
+            /*for safari browser*/
+            background: -webkit-linear-gradient(left,red,yellow);    /*start,color1,color2*/
+            /*for internet explorer*/
+            background: -ms-linear-gradient(left,red,yellow);
+            /*standard syntax*/
+            background: linear-gradient(to right,red,yellow);      /*destination,color1,color2*/
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient"></div>
+</body>
+</html>

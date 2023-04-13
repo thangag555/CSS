@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css attribute selector</title>
+    <style>
+        
+    abbr[title]{
+        color: red;
+    }
+    </style>
+    
+</head>
+<body>
+    <h1 title="abc">this is a heading</h1>
+    <p title="attribute">this is a <abbr title="aa">paragraph</abbr></p>
+    <abbr type="submit"></abbr>       <!--does not apply to attribute type-->
+</body>
+</html>

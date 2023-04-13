@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link-focus</title>
+    <style>
+        input:focus{
+            background-color: #ccc;
+            
+        }
+        form p label input{
+            
+            table-layout: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>focus selector example</h2>
+    <form action="#" method="post">
+        <p><label>name:<input type="text" name="name" placeholder="fname" required></label></p>
+        <p><label>surname:<input type="text" name="surname" placeholder="sname" required></label></p>
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear gradient default(top to bottom)</title>
+    <style>
+        div.gradient{
+            width: 300px;
+            height: 300px;
+            /*fallback for browser that don't support gradient*/
+            background: red;
+            /*for safari browser*/
+            background: -webkit-linear-gradient(red,yellow);
+            /*for internet explorer*/
+            background: -ms-linear-gradient(red,yellow);
+            /*standard syntax*/
+            background: linear-gradient(red,yellow);
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient"></div>
+</body>
+</html>

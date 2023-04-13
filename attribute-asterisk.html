@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute asterisk selector</title>
+    <style>
+        [class*="warning"]{
+            color: #fff;
+            background: rebeccapurple;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p class="alert warning">this is a paragraph</p>         <!--if warning is present the selector works-->
+    <p class=" warning">this is a paragraph</p> 
+</body>
+</html>

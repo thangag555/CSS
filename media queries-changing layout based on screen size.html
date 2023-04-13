@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries-changing layout based on screen size</title>
+    <style>
+        .column{
+            width: 48%;
+            padding: 0 15px;
+            box-sizing: border-box;
+            background: #93dcff;
+            float: left;
+        }
+        .container .column:first-child{
+            margin-right: 4%;
+        }
+
+        @media screen and (max-width:767px){
+            .column{
+                width: 100%;
+                padding: 5px 20px;
+                float: none;
+            }
+        
+
+        .container .column:first-child{
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container column">this is a division.</div>
+</body>
+</html>
